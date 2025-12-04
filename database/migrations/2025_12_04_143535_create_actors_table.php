@@ -26,6 +26,7 @@ return new class extends Migration
             $table->timestamps();
 
 
+            //for select at list page
             $table->index('created_at');
         });
     }
