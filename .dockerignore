@@ -1,0 +1,23 @@
+# Git
+.git
+.gitignore
+
+# Dependencies
+/vendor
+/node_modules
+
+# Environment
+.env
+.env.production
+
+# IDE & System
+.idea
+.vscode
+.DS_Store
+Thumbs.db
+
+# Tests & Logs
+/tests
+/storage/logs
+/storage/framework
+phpunit.xml
