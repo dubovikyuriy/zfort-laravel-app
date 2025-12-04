@@ -11,7 +11,10 @@ return new class extends Migration
         Schema::create('actors', function (Blueprint $table) {
             $table->id();
             $table->string('email')->unique();
+
+            //its not very good but in the technical task it is required to make description unique
             $table->text('description')->unique();
+
             $table->string('first_name');
             $table->string('last_name');
             $table->string('address');
@@ -19,7 +22,11 @@ return new class extends Migration
             $table->string('weight')->nullable();
             $table->string('gender')->nullable();
             $table->integer('age')->nullable();
+
             $table->timestamps();
+
+
+            $table->index('created_at');
         });
     }
 

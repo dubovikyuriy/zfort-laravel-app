@@ -5,7 +5,6 @@ namespace Tests\Feature;
 use App\Contracts\AIActorInterface;
 use App\DTO\ActorProfileData;
 use App\Exceptions\IncompleteActorDataException;
-use App\Models\Actor;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 use Mockery\MockInterface;
